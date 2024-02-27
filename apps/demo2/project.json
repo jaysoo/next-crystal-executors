@@ -1,0 +1,23 @@
+{
+  "name": "demo2",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/demo2",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "outputs": ["{options.outputPath}"],
+      "executor": "@nx/next:build",
+      "options": {
+        "outputPath": "apps/demo2/.next"
+      }
+    },
+    "dev": {
+      "executor": "@nx/next:server",
+      "options": {
+        "buildTarget": "build",
+        "turbo": true
+      }
+    }
+  },
+  "tags": []
+}
