@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@next3/ui": ["ui/src/index.ts"],
+      "@next3/ui/server": ["ui/src/server.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
